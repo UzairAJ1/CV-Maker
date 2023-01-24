@@ -1,0 +1,133 @@
+.hidden1 {
+    display: none;
+}
+.hidden2
+{
+    display:none;
+}
+body
+{
+    /* background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg); */
+    /* padding-left: 200px;
+    padding-right: 200px; */
+    font-family:'Times New Roman';
+}
+.header_img
+{
+    object-fit: cover;
+    width: 100%;
+    height:500px;
+}
+label,h2 {
+    padding-left: 10px;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+/* .Form {
+    margin: 1em auto;
+    padding-left: 4rem;
+    width: 52%;
+    border: 5px solid #ffff;
+} */
+select,input:not(.Not) {
+    margin-left: 10px;
+    border-radius: 5px;
+    display: block;
+    background-color: rgb(232, 238, 239);
+    border: 1px solid #0a0a23;
+    width: 40vw;
+    min-height: 2em;
+}
+input {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    
+    
+}
+table,th,td
+{
+    border:1px solid black;
+    margin-left: 10px;
+}
+button[type=button] {
+    width: 550px;
+    height: 2em;
+    border-radius: 5px;
+    margin-left: 10px;
+    
+}
+button
+{
+    background-color:rgb(27, 188, 155);
+}
+button:hover {
+    background-color: #109177;
+  }
+
+textarea{
+    background-color: rgb(232, 238, 239);
+    margin-left: 10px;
+}
+textarea
+{
+    margin-top:20px;
+}
+.Full_body:not(.Table)
+{
+    padding-left:100px;
+    
+}
+.Box2
+{
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom:2px solid black ;
+    background-color: rgb(204, 222, 236);
+    width: 70%;
+    margin-right: 100px;
+    
+    /* padding-left: 300px; */
+}
+.Box1
+{
+    background-color: rgb(223, 224, 226);
+    width: 30%;
+    margin-left: 200px;
+    border:2px solid black;
+    
+   
+}
+.Big_Box
+{
+    display: flex;
+flex-direction: row;
+}
+.img2
+{
+    object-fit: cover;
+    width: 142%;
+    height:150px;
+}
+.Big_Box2
+{
+    
+    width:70%;
+    height:150px;
+}
+.Table
+{
+    width: 200%;
+}
+h1[id="First_header"]
+{
+    text-align: center;
+    color:#109177;
+}
+.None
+{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media(max-width:800px)
+{
+    .Big_Box{width: 50%;}
+}

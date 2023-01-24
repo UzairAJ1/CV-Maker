@@ -1,0 +1,38 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background: yellow;    
+    text-align: center;
+}
+.calculator {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input, button {
+    border: none;
+    outline: none;
+    height: 50px;
+}
+input {
+    width: 321px;
+    font-size: 30px;
+    margin-bottom: -1px;
+    
+}
+button {
+    margin: -1px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    background-color: white;
+    width: 80px;
+    color: #333A4D;
+}
+button:active {
+    background-color: #333A4D;
+    color: #EEEEEE;
+}

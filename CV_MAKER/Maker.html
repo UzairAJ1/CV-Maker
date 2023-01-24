@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment2</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="index.js"></script>
+</head>
+<body>
+    
+    <div class="Big_Box">
+        
+        <div class="Box1">
+            <img class="header_img" src="3_interiorch_architect_resume_cv_LK42TJH.jpeg" />
+            
+        </div>  
+        <div class="Box2">    
+            
+            <div class="Big_Box2">
+
+                <img class="img2" src="geometric-polygons-header-abstract-black-and-gold-metallic-banner-simple-illustration-vector.jpg" />
+            </div>
+            <h1 id="First_header">CV Maker: </h1>
+    <form id="survey-form">
+        <label id="name-label">
+            Name:
+            <input id="name" type="text" required placeholder="Enter your name">
+        </label>
+
+       
+           <label>
+            Enter Father's name
+            <input id="F_name" type="text" required placeholder="Enter your Father's name" />
+        </label>
+        <div id="rates">
+            <label>
+            <input id="M_gender" value="Male" type="radio" name="Gender" class="Not" />Male
+        </label>
+        
+        <br />
+        <label>
+            <input id="F_gender" value="Female" type="radio" name="Gender" class="Not" />Female
+        </div>
+            <br />
+        </label>
+        <label id="email-label">
+            Email:
+            <input id="email" type="email" required placeholder="Enter Email" />
+
+        </label>
+        <label id="Contact_no">
+            Contact Number:
+            <input id="contact_no" type="text" required placeholder="Enter Contact Number" />
+
+        </label>
+        <label id="Adrress">
+            Postal Address:
+            <input id="Adrress1" type="text" required placeholder="Enter Full Adrress" />
+
+        </label>
+        <label id="Website">
+            Website:URL
+            <input id="Website1" type="text" required placeholder="Enter Website Url" />
+
+        </label>
+    </form>
+
+
+
+
+
+
+
+    <h2>Education:</h2>
+    <table class="Table" id="Shown_table" style="width:75%">
+        <tr>
+
+            <th>Degree Title</th>
+
+            <th>Institute</th>
+
+            <th>City</th>
+
+            <th>Passing year</th>
+
+            <th>Total Marks</th>
+
+            <th>Marks Obtained</th>
+
+        </tr>
+        <tr>
+            <th id="ins_label"></th>
+
+            <th id="ins-label2"></th>
+
+            <th id="ins-label3"></th>
+
+            <th id="ins-label4"></th>
+
+            <th id="ins-label5"></th>
+
+            <th id="ins-label6"></th>
+
+
+        </tr>
+    </table>
+
+
+    <button id="Save Experience" type="button" onclick="toggleTable1()">Enter Education</button>
+    <form id="myTable1" style="width:50%" class="hidden1">
+
+        <br />
+        <select id="Degree_Title" class="H1">
+            <option value="1">Degree Title</option>
+            <option value="2">Student</option>
+            <option value="3">Working</option>
+        </select>
+        <br />
+
+        <input type="text" id="Institute_name" required placeholder="Institute Name" class="H1" />
+        <br />
+        <input type="text" id="Institute_city" required placeholder="Institute City" class="H1" />
+
+        <br />
+        <select id="Passing_year" class="H1">
+            <option value="1">Passing Year</option>
+            <option value="2">2010</option>
+            <option value="3">2015</option>
+            <option value="4">2005</option>
+            <option value="5">2020</option>
+        </select>
+        <br />
+        <input id="total_marks" type="text" required placeholder="Total Marks" class="H1" />
+
+        <input id="marks_obtained" type="text" required placeholder="Obtained Marks" class="H1" />
+
+        <button type="button" onclick="toggleTable1()" class="H1">Save Education</button>
+    </form>
+
+
+
+
+    <h2>Work Experience:</h2>
+    <table class="Table" id="Shown_table2" style="width:75%">
+        <tr>
+
+            <th>Institute</th>
+
+            <th>Position</th>
+
+            <th>City</th>
+
+            <th>Duration</th>
+
+            <th>Responsibilities</th>
+
+        </tr>
+        <tr>
+            <th id="in_label"></th>
+
+            <th id="in-label2"></th>
+
+            <th id="in-label3"></th>
+
+            <th id="in-label4"></th>
+
+            <th id="in-label5"></th>
+
+
+        </tr>
+    </table>
+
+
+    <button type="button" id="Enter_button2" onclick="toggleTable2()" class="H2">Enter Experience </button>
+
+
+
+    <form id="myTable2" style="width:50%" class="hidden2">
+
+
+        <input id="Institute1" type="text" required placeholder="Institute" class="H2" />
+
+        <input id="position" type="text" required placeholder="Position" class="H2" />
+        <input id="city" type="text" required placeholder="City" class="H2" />
+
+        <select id="duration" class="H2">
+            <option value="1">Duration</option>
+            <option value="2">1 Year</option>
+            <option value="3">2 year</option>
+            <option value="2">3 Year</option>
+            <option value="3">4 year</option>
+        </select>
+        <br />
+
+        <input id="responsibilities" type="text" required placeholder="Responsibilities" class="H2" />
+
+        <br />
+
+        <button type="button" onclick="toggleTable2()" class="H2">Save Experience</button>
+    </form>
+
+
+
+
+    <br />
+    <br />
+    <label>Professional Summary:</label><br />
+    <textarea id="txtarea" name="bio" rows="6" cols="71" placeholder="I like coding on the beach..."></textarea>
+    <br />
+    <label>Upload a profile picture: <input type="file" name="file" /></label>
+
+    <br />
+
+    <button type="button" onclick="CV();"
+ >Create CV</button>
+    <br />
+    <label id="Gen"></label>
+</div>
+    </div>
+</body>
+</html>
+    
